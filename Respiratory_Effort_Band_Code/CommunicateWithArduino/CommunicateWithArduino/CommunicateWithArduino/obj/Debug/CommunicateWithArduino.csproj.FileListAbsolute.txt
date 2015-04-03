@@ -1,0 +1,17 @@
+C:\Documents and Settings\pjs9486\My Documents\Visual Studio 2008\Projects\CommunicateWithArduino\CommunicateWithArduino\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\pjs9486\My Documents\Visual Studio 2008\Projects\CommunicateWithArduino\CommunicateWithArduino\obj\Debug\CommunicateWithArduino.Form1.resources
+C:\Documents and Settings\pjs9486\My Documents\Visual Studio 2008\Projects\CommunicateWithArduino\CommunicateWithArduino\obj\Debug\CommunicateWithArduino.Properties.Resources.resources
+C:\Documents and Settings\pjs9486\My Documents\Visual Studio 2008\Projects\CommunicateWithArduino\CommunicateWithArduino\obj\Debug\CommunicateWithArduino.csproj.GenerateResource.Cache
+C:\Documents and Settings\pjs9486\My Documents\Visual Studio 2008\Projects\CommunicateWithArduino\CommunicateWithArduino\bin\Debug\CommunicateWithArduino.exe
+C:\Documents and Settings\pjs9486\My Documents\Visual Studio 2008\Projects\CommunicateWithArduino\CommunicateWithArduino\bin\Debug\CommunicateWithArduino.pdb
+C:\Documents and Settings\pjs9486\My Documents\Visual Studio 2008\Projects\CommunicateWithArduino\CommunicateWithArduino\obj\Debug\CommunicateWithArduino.exe
+C:\Documents and Settings\pjs9486\My Documents\Visual Studio 2008\Projects\CommunicateWithArduino\CommunicateWithArduino\obj\Debug\CommunicateWithArduino.pdb
+C:\Users\Suyoung\Downloads\CommunicateWithArduino\CommunicateWithArduino\CommunicateWithArduino\obj\Debug\CommunicateWithArduino.exe
+C:\Users\Suyoung\Downloads\CommunicateWithArduino\CommunicateWithArduino\CommunicateWithArduino\obj\Debug\CommunicateWithArduino.pdb
+C:\Users\Suyoung\Downloads\CommunicateWithArduino\CommunicateWithArduino\CommunicateWithArduino\bin\Debug\CommunicateWithArduino.exe.config
+C:\Users\Suyoung\Downloads\CommunicateWithArduino\CommunicateWithArduino\CommunicateWithArduino\bin\Debug\CommunicateWithArduino.exe
+C:\Users\Suyoung\Downloads\CommunicateWithArduino\CommunicateWithArduino\CommunicateWithArduino\bin\Debug\CommunicateWithArduino.pdb
+C:\Users\Suyoung\Downloads\CommunicateWithArduino\CommunicateWithArduino\CommunicateWithArduino\obj\Debug\CommunicateWithArduino.csprojResolveAssemblyReference.cache
+C:\Users\Suyoung\Downloads\CommunicateWithArduino\CommunicateWithArduino\CommunicateWithArduino\obj\Debug\CommunicateWithArduino.Form1.resources
+C:\Users\Suyoung\Downloads\CommunicateWithArduino\CommunicateWithArduino\CommunicateWithArduino\obj\Debug\CommunicateWithArduino.Properties.Resources.resources
+C:\Users\Suyoung\Downloads\CommunicateWithArduino\CommunicateWithArduino\CommunicateWithArduino\obj\Debug\CommunicateWithArduino.csproj.GenerateResource.Cache
