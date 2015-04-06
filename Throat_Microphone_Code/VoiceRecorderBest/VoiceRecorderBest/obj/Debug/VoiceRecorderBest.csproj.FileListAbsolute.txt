@@ -1,0 +1,10 @@
+C:\Users\Kevin\Documents\VoiceRecorderBest\VoiceRecorderBest\bin\Debug\VoiceRecorderBest.exe.config
+C:\Users\Kevin\Documents\VoiceRecorderBest\VoiceRecorderBest\obj\Debug\VoiceRecorderBest.Form1.resources
+C:\Users\Kevin\Documents\VoiceRecorderBest\VoiceRecorderBest\obj\Debug\VoiceRecorderBest.Properties.Resources.resources
+C:\Users\Kevin\Documents\VoiceRecorderBest\VoiceRecorderBest\obj\Debug\VoiceRecorderBest.csproj.GenerateResource.Cache
+C:\Users\Kevin\Documents\VoiceRecorderBest\VoiceRecorderBest\bin\Debug\VoiceRecorderBest.exe
+C:\Users\Kevin\Documents\VoiceRecorderBest\VoiceRecorderBest\bin\Debug\VoiceRecorderBest.pdb
+C:\Users\Kevin\Documents\VoiceRecorderBest\VoiceRecorderBest\bin\Debug\NAudio.dll
+C:\Users\Kevin\Documents\VoiceRecorderBest\VoiceRecorderBest\obj\Debug\VoiceRecorderBest.exe
+C:\Users\Kevin\Documents\VoiceRecorderBest\VoiceRecorderBest\obj\Debug\VoiceRecorderBest.pdb
+C:\Users\Kevin\Documents\VoiceRecorderBest\VoiceRecorderBest\obj\Debug\VoiceRecorderBest.csprojResolveAssemblyReference.cache
