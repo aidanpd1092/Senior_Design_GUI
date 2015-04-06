@@ -1,2 +1,11 @@
 C:\Users\ArjunS\Dropbox\ECE4011_Proposal\System GUI\System GUI\System GUI\bin\Debug\System GUI.exe.config
 C:\Users\Kevin\Documents\Senior_Design_GUI\Final_GUI_Code\System GUI\System GUI\System GUI\bin\Debug\System GUI.exe.config
+C:\Users\Kevin\Documents\Senior_Design_GUI\Final_GUI_Code\System GUI\System GUI\System GUI\bin\Debug\System GUI.exe
+C:\Users\Kevin\Documents\Senior_Design_GUI\Final_GUI_Code\System GUI\System GUI\System GUI\bin\Debug\System GUI.pdb
+C:\Users\Kevin\Documents\Senior_Design_GUI\Final_GUI_Code\System GUI\System GUI\System GUI\bin\Debug\NAudio.dll
+C:\Users\Kevin\Documents\Senior_Design_GUI\Final_GUI_Code\System GUI\System GUI\System GUI\obj\Debug\System GUI.csprojResolveAssemblyReference.cache
+C:\Users\Kevin\Documents\Senior_Design_GUI\Final_GUI_Code\System GUI\System GUI\System GUI\obj\Debug\System_GUI.Form1.resources
+C:\Users\Kevin\Documents\Senior_Design_GUI\Final_GUI_Code\System GUI\System GUI\System GUI\obj\Debug\System_GUI.Properties.Resources.resources
+C:\Users\Kevin\Documents\Senior_Design_GUI\Final_GUI_Code\System GUI\System GUI\System GUI\obj\Debug\System GUI.csproj.GenerateResource.Cache
+C:\Users\Kevin\Documents\Senior_Design_GUI\Final_GUI_Code\System GUI\System GUI\System GUI\obj\Debug\System GUI.exe
+C:\Users\Kevin\Documents\Senior_Design_GUI\Final_GUI_Code\System GUI\System GUI\System GUI\obj\Debug\System GUI.pdb

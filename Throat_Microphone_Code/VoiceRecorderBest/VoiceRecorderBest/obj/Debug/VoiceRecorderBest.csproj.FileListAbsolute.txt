@@ -8,3 +8,6 @@ C:\Users\Kevin\Documents\VoiceRecorderBest\VoiceRecorderBest\bin\Debug\NAudio.dl
 C:\Users\Kevin\Documents\VoiceRecorderBest\VoiceRecorderBest\obj\Debug\VoiceRecorderBest.exe
 C:\Users\Kevin\Documents\VoiceRecorderBest\VoiceRecorderBest\obj\Debug\VoiceRecorderBest.pdb
 C:\Users\Kevin\Documents\VoiceRecorderBest\VoiceRecorderBest\obj\Debug\VoiceRecorderBest.csprojResolveAssemblyReference.cache
+C:\Users\Kevin\Documents\Senior_Design_GUI\Throat_Microphone_Code\VoiceRecorderBest\VoiceRecorderBest\bin\Debug\VoiceRecorderBest.exe.config
+C:\Users\Kevin\Documents\Senior_Design_GUI\Throat_Microphone_Code\VoiceRecorderBest\VoiceRecorderBest\obj\Debug\VoiceRecorderBest.exe
+C:\Users\Kevin\Documents\Senior_Design_GUI\Throat_Microphone_Code\VoiceRecorderBest\VoiceRecorderBest\obj\Debug\VoiceRecorderBest.pdb

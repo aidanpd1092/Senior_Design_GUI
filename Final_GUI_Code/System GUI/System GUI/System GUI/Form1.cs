@@ -7,11 +7,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using NAudio.Wave;
+using NAudio.Mixer;
 
 namespace System_GUI
 {
     public partial class Form1 : Form
     {
+
         public Form1()
         {
             InitializeComponent();
