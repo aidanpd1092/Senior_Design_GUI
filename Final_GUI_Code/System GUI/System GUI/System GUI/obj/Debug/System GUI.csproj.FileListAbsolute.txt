@@ -1,1 +1,2 @@
 C:\Users\ArjunS\Dropbox\ECE4011_Proposal\System GUI\System GUI\System GUI\bin\Debug\System GUI.exe.config
+C:\Users\Kevin\Documents\Senior_Design_GUI\Final_GUI_Code\System GUI\System GUI\System GUI\bin\Debug\System GUI.exe.config
