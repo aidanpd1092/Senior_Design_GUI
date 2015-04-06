@@ -56,10 +56,10 @@
             // 
             // tabPage1
             // 
-            this.tabPage1.Location = new System.Drawing.Point(4, 24);
+            this.tabPage1.Location = new System.Drawing.Point(4, 22);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(1445, 585);
+            this.tabPage1.Size = new System.Drawing.Size(1445, 587);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Summary";
             this.tabPage1.UseVisualStyleBackColor = true;
@@ -68,10 +68,10 @@
             // tabPage2
             // 
             this.tabPage2.Controls.Add(this.tabControl2);
-            this.tabPage2.Location = new System.Drawing.Point(4, 24);
+            this.tabPage2.Location = new System.Drawing.Point(4, 22);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(1445, 585);
+            this.tabPage2.Size = new System.Drawing.Size(1445, 587);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Devices";
             this.tabPage2.UseVisualStyleBackColor = true;
@@ -91,60 +91,60 @@
             // 
             // tabPage4
             // 
-            this.tabPage4.Location = new System.Drawing.Point(4, 24);
+            this.tabPage4.Location = new System.Drawing.Point(4, 22);
             this.tabPage4.Name = "tabPage4";
             this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage4.Size = new System.Drawing.Size(1418, 543);
+            this.tabPage4.Size = new System.Drawing.Size(1418, 545);
             this.tabPage4.TabIndex = 0;
             this.tabPage4.Text = "Microsoft Kinect";
             this.tabPage4.UseVisualStyleBackColor = true;
             // 
             // tabPage5
             // 
-            this.tabPage5.Location = new System.Drawing.Point(4, 24);
+            this.tabPage5.Location = new System.Drawing.Point(4, 22);
             this.tabPage5.Name = "tabPage5";
             this.tabPage5.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage5.Size = new System.Drawing.Size(1418, 543);
+            this.tabPage5.Size = new System.Drawing.Size(1418, 545);
             this.tabPage5.TabIndex = 1;
             this.tabPage5.Text = "Pulse Oximeter";
             this.tabPage5.UseVisualStyleBackColor = true;
             // 
             // tabPage6
             // 
-            this.tabPage6.Location = new System.Drawing.Point(4, 24);
+            this.tabPage6.Location = new System.Drawing.Point(4, 22);
             this.tabPage6.Name = "tabPage6";
             this.tabPage6.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage6.Size = new System.Drawing.Size(1418, 543);
+            this.tabPage6.Size = new System.Drawing.Size(1418, 545);
             this.tabPage6.TabIndex = 2;
             this.tabPage6.Text = "Respiratory Effort Band";
             this.tabPage6.UseVisualStyleBackColor = true;
             // 
             // tabPage7
             // 
-            this.tabPage7.Location = new System.Drawing.Point(4, 24);
+            this.tabPage7.Location = new System.Drawing.Point(4, 22);
             this.tabPage7.Name = "tabPage7";
             this.tabPage7.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage7.Size = new System.Drawing.Size(1406, 535);
+            this.tabPage7.Size = new System.Drawing.Size(1418, 545);
             this.tabPage7.TabIndex = 3;
             this.tabPage7.Text = "Spirometer";
             this.tabPage7.UseVisualStyleBackColor = true;
             // 
             // tabPage8
             // 
-            this.tabPage8.Location = new System.Drawing.Point(4, 24);
+            this.tabPage8.Location = new System.Drawing.Point(4, 22);
             this.tabPage8.Name = "tabPage8";
             this.tabPage8.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage8.Size = new System.Drawing.Size(1418, 543);
+            this.tabPage8.Size = new System.Drawing.Size(1418, 545);
             this.tabPage8.TabIndex = 4;
             this.tabPage8.Text = "Throat Microphone";
             this.tabPage8.UseVisualStyleBackColor = true;
             // 
             // tabPage3
             // 
-            this.tabPage3.Location = new System.Drawing.Point(4, 24);
+            this.tabPage3.Location = new System.Drawing.Point(4, 22);
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(1445, 585);
+            this.tabPage3.Size = new System.Drawing.Size(1445, 587);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "Signals";
             this.tabPage3.UseVisualStyleBackColor = true;
@@ -156,7 +156,7 @@
             this.ClientSize = new System.Drawing.Size(1362, 625);
             this.Controls.Add(this.tabControl1);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Das:Parer";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.tabControl1.ResumeLayout(false);
             this.tabPage2.ResumeLayout(false);
