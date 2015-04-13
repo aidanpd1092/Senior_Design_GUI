@@ -1,4 +1,4 @@
-function S = spiro_data_reading(Subject_number, trial, display_fig);
+function [time, data] = spiro_data_reading(Subject_number, trial);
 
 
 folder_name = ['C:\Users\ArjunS\Desktop\Trials\'];
@@ -105,15 +105,16 @@ end
 
 
 S = load([folder_name save_name]);
-if(display_fig == 1)
-    plot(S.time_vect, S.volume_data)
-    grid on
-    title('FEV1 test from Spirometer (Bubble Tea Straw)')
-    xlabel('Time (sec)')
-    ylabel('Volume (Lit)')
-    hold on
-end
-plot(1,FEV1,'ro')
-plot(time_vect(length(time_vect)), FVC, 'go')
+time = S.time_vect; data = S.volume_data;
+% if(display_fig == 1)
+%     plot(S.time_vect, S.volume_data)
+%     grid on
+%     title('FEV1 test from Spirometer (Bubble Tea Straw)')
+%     xlabel('Time (sec)')
+%     ylabel('Volume (Lit)')
+%     hold on
+% end
+% plot(1,FEV1,'ro')
+% plot(time_vect(length(time_vect)), FVC, 'go')
 
 end

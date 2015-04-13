@@ -1,0 +1,66 @@
+ant:
+<ant>
+  <mkdir dir="\\Client\C$\Users\ArjunS\Desktop\Senior_Design_GUI\Spirometer_Code\spiro_data_reading\for_redistribution" />
+  <mkdir dir="\\Client\C$\Users\ArjunS\Desktop\Senior_Design_GUI\Spirometer_Code\spiro_data_reading\for_testing" />
+</ant>
+mcc -W 'dotnet:spiro_data_reading,spirofunc,0.0,private' -T link:lib -d \\Client\C$\Users\ArjunS\Desktop\Senior_Design_GUI\Spirometer_Code\spiro_data_reading\for_testing -v \\Client\C$\Users\ArjunS\Desktop\Senior_Design_GUI\Spirometer_Code\spiro_data_reading.m class{spirofunc:\\Client\C$\Users\ArjunS\Desktop\Senior_Design_GUI\Spirometer_Code\spiro_data_reading.m} 
+[Warning: Name is nonexistent or not a directory:
+C:\Appl\Xilinx\Vivado\2014.2\scripts\sysgen\matlab] 
+[Warning: Name is nonexistent or not a directory:
+C:\Appl\Xilinx\Vivado\2014.2\scripts\sysgen\matlab\plugins\compilation] 
+[Warning: Name is nonexistent or not a directory:
+C:\Appl\Xilinx\Vivado\2014.2\lib\win64.o] 
+[Warning: Name is nonexistent or not a directory:
+C:\Appl\Xilinx\Vivado\2014.2\lib\win64.o\matlab] 
+[Warning: Name is nonexistent or not a directory:
+C:\Appl\Xilinx\Vivado\2014.2\examples\sysgen_demos] 
+Compiler version: 5.1 (R2014a)
+Dependency analysis by REQUIREMENTS.
+[Warning: Duplicate directory name: C:\Program
+Files\MATLAB\R2014a\toolbox\coder\simulinkcoder\cgv\API] 
+[> In path at 33
+  In requirements at 156] 
+[Warning: Duplicate directory name: C:\Program
+Files\MATLAB\R2014a\toolbox\matlab\winfun\NET] 
+[> In path at 33
+  In requirements at 156] 
+[Warning: Duplicate directory name: C:\Program
+Files\MATLAB\R2014a\toolbox\rtw\targets\AUTOSAR\AUTOSAR] 
+[> In path at 33
+  In requirements at 156] 
+[Warning: Duplicate directory name: C:\Program
+Files\MATLAB\R2014a\toolbox\rtw\targets\AUTOSAR\AUTOSAR\dataclasses] 
+[> In path at 33
+  In requirements at 156] 
+[Warning: Duplicate directory name: C:\Program
+Files\MATLAB\R2014a\toolbox\simulink\simulink\MPlayIO] 
+[> In path at 33
+  In requirements at 156] 
+[Warning: Duplicate directory name: C:\Program
+Files\MATLAB\R2014a\toolbox\slvnv\reqmgt\RTExplorer] 
+[> In path at 33
+  In requirements at 156] 
+[Warning: Adding path
+"\\Client\C$\Users\ArjunS\Desktop\Senior_Design_GUI\Spirometer_Code" to
+Compiler path instance.] 
+Parsing file "\\Client\C$\Users\ArjunS\Desktop\Senior_Design_GUI\Spirometer_Code\spiro_data_reading.m"
+	(Referenced from: "Compiler Command Line").
+Parsing file "C:\Program Files\MATLAB\R2014a\toolbox\compiler\deploy\deployprint.m"
+	(Referenced from: "Compiler Command Line").
+Parsing file "C:\Program Files\MATLAB\R2014a\toolbox\compiler\deploy\printdlg.m"
+	(Referenced from: "Compiler Command Line").
+Deleting 0 temporary MEX authorization files.
+Generating file "\\Client\C$\Users\ArjunS\Desktop\Senior_Design_GUI\Spirometer_Code\spiro_data_reading\for_testing\spirofuncNative.cs".
+Generating file "\\Client\C$\Users\ArjunS\Desktop\Senior_Design_GUI\Spirometer_Code\spiro_data_reading\for_testing\spirofunc.cs".
+Generating file "\\Client\C$\Users\ArjunS\Desktop\Senior_Design_GUI\Spirometer_Code\spiro_data_reading\for_testing\readme.txt".
+'\\Client\C$\Users\ArjunS\Desktop\Senior_Design_GUI\Spirometer_Code'
+CMD.EXE was started with the above path as the current directory.
+UNC paths are not supported.  Defaulting to Windows directory.
+'\\Client\C$\Users\ArjunS\Desktop\Senior_Design_GUI\Spirometer_Code'
+CMD.EXE was started with the above path as the current directory.
+UNC paths are not supported.  Defaulting to Windows directory.
+Executing command: C:\Windows\Microsoft.NET\Framework64\v4.0.30319\csc.exe /nologo /optimize /doc:"\\Client\C$\Users\ArjunS\Desktop\Senior_Design_GUI\Spirometer_Code\spiro_data_reading\for_testing\spiro_data_reading.xml" /t:library /r:"C:\Program Files\MATLAB\R2014a\toolbox\dotnetbuilder\bin\win64\v2.0\MWArray.dll" /resource:"\\Client\C$\Users\ArjunS\Desktop\Senior_Design_GUI\Spirometer_Code\spiro_data_reading\for_testing\spiro_data_reading.ctf" /out:"\\Client\C$\Users\ArjunS\Desktop\Senior_Design_GUI\Spirometer_Code\spiro_data_reading\for_testing\spiro_data_reading.dll" "\\Client\C$\Users\ArjunS\Desktop\Senior_Design_GUI\Spirometer_Code\spiro_data_reading\for_testing\spirofunc.cs"Executing command: C:\Windows\Microsoft.NET\Framework64\v4.0.30319\csc.exe /nologo /optimize /doc:"\\Client\C$\Users\ArjunS\Desktop\Senior_Design_GUI\Spirometer_Code\spiro_data_reading\for_testing\spiro_data_readingNative.xml" /t:library /r:"C:\Program Files\MATLAB\R2014a\toolbox\dotnetbuilder\bin\win64\v2.0\MWArray.dll" /resource:"\\Client\C$\Users\ArjunS\Desktop\Senior_Design_GUI\Spirometer_Code\spiro_data_reading\for_testing\spiro_data_reading.ctf" /out:"\\Client\C$\Users\ArjunS\Desktop\Senior_Design_GUI\Spirometer_Code\spiro_data_reading\for_testing\spiro_data_readingNative.dll" "\\Client\C$\Users\ArjunS\Desktop\Senior_Design_GUI\Spirometer_Code\spiro_data_reading\for_testing\spirofuncNative.cs"
+Packaging...
+Creating the bundle...
+Web based installer created at \\Client\C$\Users\ArjunS\Desktop\Senior_Design_GUI\Spirometer_Code\spiro_data_reading\for_redistribution\MyAppInstaller_web.exe.
+Packaging complete.

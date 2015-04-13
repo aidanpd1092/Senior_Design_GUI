@@ -1,0 +1,312 @@
+
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   <!--
+This HTML was auto-generated from MATLAB code.
+To make changes, update the MATLAB code and republish this document.
+      --><title>spiro_data_reading</title><meta name="generator" content="MATLAB 8.3"><link rel="schema.DC" href="http://purl.org/dc/elements/1.1/"><meta name="DC.date" content="2015-04-08"><meta name="DC.source" content="spiro_data_reading.m"><style type="text/css">
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}:focus{outine:0}ins{text-decoration:none}del{text-decoration:line-through}table{border-collapse:collapse;border-spacing:0}
+
+html { min-height:100%; margin-bottom:1px; }
+html body { height:100%; margin:0px; font-family:Arial, Helvetica, sans-serif; font-size:10px; color:#000; line-height:140%; background:#fff none; overflow-y:scroll; }
+html body td { vertical-align:top; text-align:left; }
+
+h1 { padding:0px; margin:0px 0px 25px; font-family:Arial, Helvetica, sans-serif; font-size:1.5em; color:#d55000; line-height:100%; font-weight:normal; }
+h2 { padding:0px; margin:0px 0px 8px; font-family:Arial, Helvetica, sans-serif; font-size:1.2em; color:#000; font-weight:bold; line-height:140%; border-bottom:1px solid #d6d4d4; display:block; }
+h3 { padding:0px; margin:0px 0px 5px; font-family:Arial, Helvetica, sans-serif; font-size:1.1em; color:#000; font-weight:bold; line-height:140%; }
+
+a { color:#005fce; text-decoration:none; }
+a:hover { color:#005fce; text-decoration:underline; }
+a:visited { color:#004aa0; text-decoration:none; }
+
+p { padding:0px; margin:0px 0px 20px; }
+img { padding:0px; margin:0px 0px 20px; border:none; }
+p img, pre img, tt img, li img, h1 img, h2 img { margin-bottom:0px; } 
+
+ul { padding:0px; margin:0px 0px 20px 23px; list-style:square; }
+ul li { padding:0px; margin:0px 0px 7px 0px; }
+ul li ul { padding:5px 0px 0px; margin:0px 0px 7px 23px; }
+ul li ol li { list-style:decimal; }
+ol { padding:0px; margin:0px 0px 20px 0px; list-style:decimal; }
+ol li { padding:0px; margin:0px 0px 7px 23px; list-style-type:decimal; }
+ol li ol { padding:5px 0px 0px; margin:0px 0px 7px 0px; }
+ol li ol li { list-style-type:lower-alpha; }
+ol li ul { padding-top:7px; }
+ol li ul li { list-style:square; }
+
+.content { font-size:1.2em; line-height:140%; padding: 20px; }
+
+pre, code { font-size:12px; }
+tt { font-size: 1.2em; }
+pre { margin:0px 0px 20px; }
+pre.codeinput { padding:10px; border:1px solid #d3d3d3; background:#f7f7f7; }
+pre.codeoutput { padding:10px 11px; margin:0px 0px 20px; color:#4c4c4c; }
+pre.error { color:red; }
+
+@media print { pre.codeinput, pre.codeoutput { word-wrap:break-word; width:100%; } }
+
+span.keyword { color:#0000FF }
+span.comment { color:#228B22 }
+span.string { color:#A020F0 }
+span.untermstring { color:#B20000 }
+span.syscmd { color:#B28C00 }
+
+.footer { width:auto; padding:10px 0px; margin:25px 0px 0px; border-top:1px dotted #878787; font-size:0.8em; line-height:140%; font-style:italic; color:#878787; text-align:left; float:none; }
+.footer p { margin:0px; }
+.footer a { color:#878787; }
+.footer a:hover { color:#878787; text-decoration:underline; }
+.footer a:visited { color:#878787; }
+
+table th { padding:7px 5px; text-align:left; vertical-align:middle; border: 1px solid #d6d4d4; font-weight:bold; }
+table td { padding:7px 5px; text-align:left; vertical-align:top; border:1px solid #d6d4d4; }
+
+
+
+
+
+  </style></head><body><div class="content"><pre class="codeinput"><span class="keyword">function</span> S = spiro_data_reading(Subject_number, trial, display_fig);
+
+
+folder_name = [<span class="string">'C:\Users\ArjunS\Desktop\Trials\'</span>];
+file_name =[num2str(Subject_number) <span class="string">'.dt'</span>];
+save_name =[<span class="string">'Spiro-Sub'</span> num2str(Subject_number) <span class="string">'-Straw'</span> <span class="string">'.mat'</span>];
+
+<span class="comment">% save the results in a file</span>
+save_res = 1;
+
+<span class="comment">% open the file for read out</span>
+fileID = fopen([folder_name file_name],<span class="string">'r'</span>);
+
+readout = fread(fileID, 13, <span class="string">'int32=&gt;double'</span>, 0,<span class="string">'l'</span>);
+
+ID = readout(1);
+trial_nr = readout(2);
+gender = readout(8);
+country_code = readout(10);
+age = readout(11);
+height = readout(12);
+weight = readout(13);
+
+readout = fread(fileID,29, <span class="string">'char=&gt;char'</span>,0);
+timestamp = readout(1:16).';
+filename = readout(22:29);
+
+to_rem = [];
+<span class="keyword">for</span> i = 1:8
+    <span class="keyword">if</span>(double(filename(i)) == 0)
+        to_rem = [to_rem i];
+    <span class="keyword">else</span>
+        <span class="keyword">break</span>
+    <span class="keyword">end</span>
+<span class="keyword">end</span>
+filename(to_rem) = [];
+filename = filename.';
+
+<span class="comment">% set the pointer 95 bytes further</span>
+fseek(fileID, 95, <span class="string">'cof'</span>);
+<span class="comment">% dummy = fread(fileID, 95, 'char=&gt;char',0);</span>
+
+<span class="comment">% read out smoker and drug variables</span>
+smoker = fread(fileID, 1, <span class="string">'int32=&gt;double'</span>, 0,<span class="string">'l'</span>);
+drug = fread(fileID, 1, <span class="string">'int32=&gt;double'</span>, 0,<span class="string">'l'</span>);
+
+<span class="comment">% set the file pointer 20 bytes further</span>
+fseek(fileID, 20, <span class="string">'cof'</span>);
+<span class="comment">% dummy = fread(fileID, 20, 'char=&gt;char',0);</span>
+
+<span class="comment">% read out pulmonary parameters</span>
+FVC = fread(fileID, 1, <span class="string">'double=&gt;double'</span>, 0,<span class="string">'l'</span>);
+FEV1 = fread(fileID, 1, <span class="string">'double=&gt;double'</span>, 0,<span class="string">'l'</span>);
+PEF = fread(fileID, 1, <span class="string">'double=&gt;double'</span>, 0,<span class="string">'l'</span>);
+FEV1percent = fread(fileID, 1, <span class="string">'double=&gt;double'</span>, 0,<span class="string">'l'</span>);
+FEF25 = fread(fileID, 1, <span class="string">'double=&gt;double'</span>, 0,<span class="string">'l'</span>);
+fseek(fileID, 8, <span class="string">'cof'</span>);
+FEF75 = fread(fileID, 1, <span class="string">'double=&gt;double'</span>, 0,<span class="string">'l'</span>);
+FEF2575 = fread(fileID, 1, <span class="string">'double=&gt;double'</span>, 0,<span class="string">'l'</span>);
+
+fseek(fileID, 8, <span class="string">'cof'</span>);
+readout_to_y = fread(fileID, 1, <span class="string">'int32=&gt;double'</span>, 0,<span class="string">'l'</span>);
+fseek(fileID, 4, <span class="string">'cof'</span>);
+volume_data_temp = fread(fileID, readout_to_y*2, <span class="string">'int32=&gt;double'</span>, 0,<span class="string">'l'</span>);
+
+<span class="comment">% close the file after read out</span>
+fclose(fileID);
+
+volume_data = zeros(readout_to_y,2);
+<span class="keyword">for</span> count=1:readout_to_y*2
+    volume_data(ceil(count/2),2-mod(count,2)) = volume_data_temp(count);
+<span class="keyword">end</span>
+
+volume_data = volume_data+[zeros(readout_to_y,1) ones(readout_to_y,1)];
+volume_data = [0 0; volume_data];
+
+time_vect = volume_data(:,1)./100000;
+volume_data = volume_data(:,2);
+
+
+below_1 = find(time_vect &lt; 1);
+below_1 = below_1(end);
+above_1 = find(time_vect &gt;= 1);
+
+<span class="comment">%if(~isempty(above_1) &amp;&amp; time_vect(end)&gt;=1 )</span>
+<span class="keyword">if</span>(~isempty(above_1) )
+    above_1 = above_1(1);
+
+    one = (1-time_vect(below_1))/(time_vect(above_1)-time_vect(below_1));
+
+    <span class="comment">% use the volume factor calculated by optimization</span>
+    volume_fact = 0.013202082696648;
+    volume_data = volume_data.*volume_fact;
+
+    FEV1_error = (one*volume_data(below_1)+(1-one)*volume_data(above_1)-FEV1);
+    FVC_error = volume_data(end) - FVC;
+
+    <span class="keyword">if</span>(save_res == 1)
+        save([folder_name save_name],<span class="string">'FEF25'</span>,<span class="string">'height'</span>,<span class="string">'FEF2575'</span>,<span class="string">'trial_nr'</span>,<span class="string">'FEF75'</span>,<span class="string">'country_code'</span>,<span class="keyword">...</span>
+            <span class="string">'volume_data'</span>,<span class="string">'FEV1'</span>,<span class="string">'drug'</span>,<span class="string">'readout_to_y'</span>,<span class="string">'FEV1percent'</span>,<span class="string">'save_name'</span>,<span class="keyword">...</span>
+            <span class="string">'volume_fact'</span>,<span class="string">'FVC'</span>,<span class="string">'file_name'</span>,<span class="string">'weight'</span>,<span class="string">'ID'</span>,<span class="string">'filename'</span>,<span class="string">'smoker'</span>,<span class="string">'PEF'</span>,<span class="string">'folder_name'</span>,<span class="keyword">...</span>
+            <span class="string">'time_vect'</span>,<span class="string">'age'</span>,<span class="string">'gender'</span>,<span class="string">'timestamp'</span>,<span class="string">'FEV1_error'</span>,<span class="string">'FVC_error'</span>);
+    <span class="keyword">end</span>
+<span class="keyword">end</span>
+
+
+S = load([folder_name save_name]);
+<span class="keyword">if</span>(display_fig == 1)
+    plot(S.time_vect, S.volume_data)
+    grid <span class="string">on</span>
+    title(<span class="string">'FEV1 test from Spirometer (Bubble Tea Straw)'</span>)
+    xlabel(<span class="string">'Time (sec)'</span>)
+    ylabel(<span class="string">'Volume (Lit)'</span>)
+    hold <span class="string">on</span>
+<span class="keyword">end</span>
+plot(1,FEV1,<span class="string">'ro'</span>)
+plot(time_vect(length(time_vect)), FVC, <span class="string">'go'</span>)
+
+<span class="keyword">end</span>
+</pre><pre class="codeoutput error">Error using spiro_data_reading (line 5)
+Not enough input arguments.
+</pre><p class="footer"><br><a href="http://www.mathworks.com/products/matlab/">Published with MATLAB&reg; R2014a</a><br></p></div><!--
+##### SOURCE BEGIN #####
+function S = spiro_data_reading(Subject_number, trial, display_fig);
+
+
+folder_name = ['C:\Users\ArjunS\Desktop\Trials\'];
+file_name =[num2str(Subject_number) '.dt'];
+save_name =['Spiro-Sub' num2str(Subject_number) '-Straw' '.mat'];
+
+% save the results in a file
+save_res = 1;
+
+% open the file for read out
+fileID = fopen([folder_name file_name],'r');
+
+readout = fread(fileID, 13, 'int32=>double', 0,'l');
+
+ID = readout(1);
+trial_nr = readout(2);
+gender = readout(8);
+country_code = readout(10);
+age = readout(11);
+height = readout(12);
+weight = readout(13);
+
+readout = fread(fileID,29, 'char=>char',0);
+timestamp = readout(1:16).';
+filename = readout(22:29);
+
+to_rem = [];
+for i = 1:8
+    if(double(filename(i)) == 0)
+        to_rem = [to_rem i];
+    else
+        break
+    end
+end
+filename(to_rem) = [];
+filename = filename.';
+
+% set the pointer 95 bytes further
+fseek(fileID, 95, 'cof');
+% dummy = fread(fileID, 95, 'char=>char',0);
+
+% read out smoker and drug variables
+smoker = fread(fileID, 1, 'int32=>double', 0,'l');
+drug = fread(fileID, 1, 'int32=>double', 0,'l');
+
+% set the file pointer 20 bytes further
+fseek(fileID, 20, 'cof');
+% dummy = fread(fileID, 20, 'char=>char',0);
+
+% read out pulmonary parameters
+FVC = fread(fileID, 1, 'double=>double', 0,'l');
+FEV1 = fread(fileID, 1, 'double=>double', 0,'l');
+PEF = fread(fileID, 1, 'double=>double', 0,'l');
+FEV1percent = fread(fileID, 1, 'double=>double', 0,'l');
+FEF25 = fread(fileID, 1, 'double=>double', 0,'l');
+fseek(fileID, 8, 'cof');
+FEF75 = fread(fileID, 1, 'double=>double', 0,'l');
+FEF2575 = fread(fileID, 1, 'double=>double', 0,'l');
+
+fseek(fileID, 8, 'cof');
+readout_to_y = fread(fileID, 1, 'int32=>double', 0,'l');
+fseek(fileID, 4, 'cof');
+volume_data_temp = fread(fileID, readout_to_y*2, 'int32=>double', 0,'l');
+
+% close the file after read out
+fclose(fileID);
+
+volume_data = zeros(readout_to_y,2);
+for count=1:readout_to_y*2
+    volume_data(ceil(count/2),2-mod(count,2)) = volume_data_temp(count);
+end
+
+volume_data = volume_data+[zeros(readout_to_y,1) ones(readout_to_y,1)];
+volume_data = [0 0; volume_data];
+
+time_vect = volume_data(:,1)./100000;
+volume_data = volume_data(:,2); 
+
+
+below_1 = find(time_vect < 1);
+below_1 = below_1(end);
+above_1 = find(time_vect >= 1);
+
+%if(~isempty(above_1) && time_vect(end)>=1 )
+if(~isempty(above_1) )
+    above_1 = above_1(1);
+    
+    one = (1-time_vect(below_1))/(time_vect(above_1)-time_vect(below_1));
+    
+    % use the volume factor calculated by optimization
+    volume_fact = 0.013202082696648;
+    volume_data = volume_data.*volume_fact;
+    
+    FEV1_error = (one*volume_data(below_1)+(1-one)*volume_data(above_1)-FEV1);
+    FVC_error = volume_data(end) - FVC;
+    
+    if(save_res == 1)
+        save([folder_name save_name],'FEF25','height','FEF2575','trial_nr','FEF75','country_code',...
+            'volume_data','FEV1','drug','readout_to_y','FEV1percent','save_name',...
+            'volume_fact','FVC','file_name','weight','ID','filename','smoker','PEF','folder_name',...
+            'time_vect','age','gender','timestamp','FEV1_error','FVC_error');
+    end
+end
+
+
+S = load([folder_name save_name]);
+if(display_fig == 1)
+    plot(S.time_vect, S.volume_data)
+    grid on
+    title('FEV1 test from Spirometer (Bubble Tea Straw)')
+    xlabel('Time (sec)')
+    ylabel('Volume (Lit)')
+    hold on
+end
+plot(1,FEV1,'ro')
+plot(time_vect(length(time_vect)), FVC, 'go')
+
+end
+##### SOURCE END #####
+--></body></html>
