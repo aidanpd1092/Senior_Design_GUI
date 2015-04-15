@@ -1,7 +1,7 @@
-function [time, data] = spiro_data_reading(Subject_number, trial);
+function [time, data] = spiro_data_reading(Subject_number, trial, folder_name);
 
 
-folder_name = ['C:\Users\ArjunS\Desktop\Trials\'];
+
 file_name =[num2str(Subject_number) '.dt'];
 save_name =['Spiro-Sub' num2str(Subject_number) '-Straw' '.mat'];
 
